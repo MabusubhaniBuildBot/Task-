@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task javascript</title>
+    <link rel="stylesheet" href="taskjs_p.css">
+</head>
+
+<body>
+    <form autocomplete="on" onsubmit="event.preventDefault(); onFormSubmit();">
+        <p>
+            <lable for="imgfile">Product Image</lable>
+        </p>
+
+
+        <input type="file" id="imgfile" name="imgfile">
+        <div id="displayImage"></div>
+        
+        
+        
+        <br>
+        <br>
+        <lable for="p_bRand">Product Brand:-</lable>
+        <input type="text" id="p_bRand" name="p_bRand">
+        <br>
+        <br>
+        <lable for="p_nAme">Product Name:-</lable>
+        <input type="text" id="p_nAme" name="p_nAme">
+        <br>
+        <br>
+        <lable for="p_Model">Product Model:-</lable>
+        <input type="text" id="p_Model" name="p_Model">
+        <br>
+        <br>
+        <lable for="p_color">Product color:-</lable>
+        <input type="text" id="p_color" name="p_color">
+        <span id="span-color"></span>
+        <br>
+        <br>
+        <lable for="prize">Prize:-</lable>
+        <input type="number" id="prize" name="prize">
+        <br>
+        <br>
+        <p>
+            <labe for="textarea">Product Description:-</labe>
+        </p>
+        <textarea id="textarea" rows="7" cols="50" name="textarea" placeholder="Comment(optional)"></textarea>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+    <div id="product-container"></div>
+    <br>
+    <br>
+    <br>
+    <div style="border: 2px solid black;">
+        <table id="table-data">
+            <thead>
+                <tr>
+                    <td>Product Image</td>
+                    <td>Product Brand</td>
+                    <td>Product Name</td>
+                    <td>Product Model</td>
+                    <td>Product color</td>
+                    <td>Prize</td>
+                    <td>Product Description</td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <p style="margin: 10px;">Total:-</p>
+        <p id="totalvalue" value="0"></p>
+
+    </div>
+    <div id="product-container"></div>
+
+    <script src="Taskjs_p.js" text="javascript"></script>
+</body>
+
+</html>
