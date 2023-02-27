@@ -11,7 +11,6 @@
 
             });
             reader.readAsDataURL(this.files[0]);
-
         });
 
 var totalPrize = 0;
